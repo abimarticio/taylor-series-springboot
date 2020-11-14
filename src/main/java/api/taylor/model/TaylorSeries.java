@@ -1,4 +1,5 @@
 package api.taylor.model;
+import java.lang.Math;
 
 public class TaylorSeries {
 	
