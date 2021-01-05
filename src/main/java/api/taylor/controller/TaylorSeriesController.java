@@ -28,4 +28,13 @@ public class TaylorSeriesController {
 		double computedValue = sin.computeSeries(value, numTerms);
 		return computedValue;
 	}
+	
+	@GetMapping("/taylor-series/exponential")
+	public Double exponential(@RequestParam Map<Double,Double> requestParameters) {
+		double numTerms = Double.valueOf(requestParameters.get("numTerms"));
+		double value = Double.valueOf(requestParameters.get("value"));
+		TaylorSeries exp = new Exponential();
+		double computedValue = exp.computeSeries(value, numTerms);
+		return computedValue;
+	}
 }
