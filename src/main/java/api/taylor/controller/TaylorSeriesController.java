@@ -21,7 +21,7 @@ public class TaylorSeriesController {
 	}
 	
 	@GetMapping("/taylor-series/sine")
-	public Double sine(@RequestParam Map<Double,Double> requestParameters) {
+	public Double sine(@RequestParam Map<String,String> requestParameters) {
 		double numTerms = Double.valueOf(requestParameters.get("numTerms"));
 		double value = Double.valueOf(requestParameters.get("value"));
 		TaylorSeries sin = new Sine();
@@ -30,7 +30,7 @@ public class TaylorSeriesController {
 	}
 	
 	@GetMapping("/taylor-series/exponential")
-	public Double exponential(@RequestParam Map<Double,Double> requestParameters) {
+	public Double exponential(@RequestParam Map<String,String> requestParameters) {
 		double numTerms = Double.valueOf(requestParameters.get("numTerms"));
 		double value = Double.valueOf(requestParameters.get("value"));
 		TaylorSeries exp = new Exponential();
