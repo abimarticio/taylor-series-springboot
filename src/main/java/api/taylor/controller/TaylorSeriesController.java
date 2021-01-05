@@ -13,8 +13,8 @@ import api.taylor.model.TaylorSeries;
 public class TaylorSeriesController {
 	@GetMapping("/taylor-series/cosine")
 	public Double cosine(@RequestParam Map<Double,Double> requestParameters) {
-		double numTerms = Double.valueOf(requestParameters.get("numTerms"));
-		double value = Double.valueOf(requestParameters.get("value"));
+		double numTerms = requestParameters.get("numTerms");
+		double value = requestParameters.get("value");
 		TaylorSeries cos = new Cosine();
 		double computedValue = cos.computeSeries(value, numTerms);
 		return computedValue;
