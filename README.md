@@ -18,3 +18,9 @@ To use the Taylor Series Spring Boot app for Sine, Cosine and Exponential functi
 * `/taylor-series/cosine` for Cosine. The request parameters for this function are numTerms and value.
 * `/taylor-series/exponential` for Exponential. The request parameters for this function are numTerms and value.
 * `/taylor-series/sine` for Sine. The request parameters for this function are numTerms and value.
+
+To run this app, we can use Maven:
+
+```buildoutcfg
+$ ./mvnw spring-boot:run
+```
