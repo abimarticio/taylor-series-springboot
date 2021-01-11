@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import api.taylor.model.TaylorSeries;
+import api.taylor.model.Cosine;
+import api.taylor.model.Exponential;
+import api.taylor.model.Sine;
 
 
 @RestController
