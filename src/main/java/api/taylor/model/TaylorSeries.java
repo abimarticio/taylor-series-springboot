@@ -13,19 +13,6 @@ public class TaylorSeries {
     }
 }
 
-class Exponential extends TaylorSeries {
-	
-    static double computeSeries(double x, double numTerms) {
-        double approximation = 0;
-        for (int i = 0; i < numTerms; i++) {
-            double numerator = Math.pow(x, i);
-            double denominator = factorial(i);
-            approximation += (numerator / denominator);
-        }
-        return approximation;
-    }
-}
-
 class Sine extends TaylorSeries {
     static double computeSeries(double x, double numTerms) {
         x = Math.toRadians(x);
