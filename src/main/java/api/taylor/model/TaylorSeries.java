@@ -11,4 +11,8 @@ public class TaylorSeries {
             return num * factorial(num - 1);
         }
     }
+	public double computeSeries(double value, double numTerms) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
