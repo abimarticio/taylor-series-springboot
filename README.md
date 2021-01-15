@@ -53,7 +53,7 @@ $ curl -s -X GET "localhost:8080/taylor-series/sine?numTerms=10&value=60"
 3.2564429289571426E10
 ```
 
-##License
+## License
 
 ```
 Taylor Series Spring Boot app
