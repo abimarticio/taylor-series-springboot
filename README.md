@@ -36,10 +36,10 @@ We can call our API in Python through the following manner,
 0.5000000021269722
 >>> r = requests.get("http://localhost:8080/taylor-series/exponential?numTerms=10&value=60")
 >>> r.text
-0.8660253739422824
+3.2564429289571426E10
 >>> r = requests.get("http://localhost:8080/taylor-series/sine?numTerms=10&value=60")
 >>> r.text
-3.2564429289571426E10
+0.8660253739422824
 ```
 
 We can call our API using `curl` command in the following manner,
@@ -48,9 +48,9 @@ We can call our API using `curl` command in the following manner,
 $ curl -s -X GET "localhost:8080/taylor-series/cosine?numTerms=10&value=60"
 0.5000000021269722
 $ curl -s -X GET "localhost:8080/taylor-series/exponential?numTerms=10&value=60"
-0.8660253739422824
-$ curl -s -X GET "localhost:8080/taylor-series/sine?numTerms=10&value=60"
 3.2564429289571426E10
+$ curl -s -X GET "localhost:8080/taylor-series/sine?numTerms=10&value=60"
+0.8660253739422824
 ```
 
 ## License
